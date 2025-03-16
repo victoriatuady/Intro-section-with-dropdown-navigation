@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Victoria Tuady" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header-section">
+          <div class="header-nav">
+            <div>
+              <img src="assets/images/logo.svg" alt="logo" />
+            </div>
+            <div>
+              <img
+                class="menu"
+                src="assets/images/icon-menu.svg"
+                alt="icon-menu"
+              />
+            </div>
+          </div>
+          <div class="nav-section">
+            <img
+              class="close-menu"
+              src="assets/images/icon-close-menu.svg"
+              alt="icon-close-menu"
+            />
+            <div class="nav-list">
+              <div id="overlay"></div>
+              <nav class="nav">
+                <ul>
+                  <li class="head-list" id="features">
+                    Features
+                    <svg
+                      id="first-arrow"
+                      class="arrow-down"
+                      width="10"
+                      height="6"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+                    </svg>
+                  </li>
+                  <ul class="nested-list" id="features-list">
+                    <li>
+                      <img
+                        src="assets/images/icon-todo.svg"
+                        alt="icon-todo"
+                      />Todo List
+                    </li>
+                    <li>
+                      <img
+                        src="assets/images/icon-calendar.svg"
+                        alt="icon-calendar"
+                      />Calendar
+                    </li>
+                    <li>
+                      <img
+                        src="assets/images/icon-reminders.svg"
+                        alt="icon-reminders"
+                      />Reminders
+                    </li>
+                    <li>
+                      <img
+                        src="assets/images/icon-planning.svg"
+                        alt="icon-planning"
+                      />Planning
+                    </li>
+                  </ul>
+                  <li class="head-list" id="company">
+                    Company
+                    <svg
+                      id="second-arrow"
+                      class="arrow-down"
+                      width="10"
+                      height="6"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+                    </svg>
+                  </li>
+                  <ul class="nested-list" id="company-list">
+                    <li>History</li>
+                    <li>Our Team</li>
+                    <li>Blog</li>
+                  </ul>
+                  <li class="head-list">Careers</li>
+                  <li class="head-list">About</li>
+                </ul>
+              </nav>
+              <div class="btn">
+                <button>Login</button>
+                <button class="border-btn register-btn">Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main">
+        <div class="picture">
+          <picture>
+            <source
+              media="(max-width:768px)"
+              srcset="assets/images/image-hero-mobile.png"
+            />
+
+            <source
+              media="(min-width:769px)"
+              srcset="assets/images/image-hero-desktop.png"
+            />
+            <img
+              src="assets/images/image-hero-mobile.png"
+              alt="image-hero-mobile"
+            />
+          </picture>
+        </div>
+        <div class="main-text">
+          <div class="main-paragraph">
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="border-btn learn-btn">Learn more</button>
+          </div>
+          <div class="clients">
+            <img src="assets/images/client-databiz.svg" alt="client-databiz" />
+            <img
+              src="assets/images/client-audiophile.svg"
+              alt="client-audiophile"
+            />
+            <img src="assets/images/client-meet.svg" alt="client-meet" />
+            <img src="assets/images/client-maker.svg" alt="client-maker" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
